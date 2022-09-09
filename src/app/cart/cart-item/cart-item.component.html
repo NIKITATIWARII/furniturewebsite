@@ -1,0 +1,72 @@
+
+
+
+<!-- <ng-container >
+  <div class="container">
+<div class="card-table">
+  <div class="cart-product">
+      <table class="table table-responsive">
+          <thead>
+              <tr>
+                  <th>Sr.No</th>
+                  <th>Product Name</th>
+                  <th>Product Image</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tr>
+              <td>{{cartItem.id}}</td>
+              <td>{{cartItem.productName}}</td>
+              <td>{{cartItem.imageUrl}}</td>
+              <td>{{cartItem.price}}</td>
+              <td>{{cartItem.qty}}</td>
+              <td>{{cartItem.qty * cartItem.price | currency: 'INR'}}</td>
+              <td>
+                  <i class="bi bi-trash-fill"></i>           
+              </td>
+          </tr>
+      </table>
+  </div>
+</div>
+</div>
+</ng-container> -->
+
+
+
+
+
+
+
+<div class="container rounded-lg">
+    <div  class="row  rounded-lg  bg-info ">
+        <div  class="col-2  ">Product Name</div>
+        <div  class="col-2 ">Product Quantity</div>
+        <div  class="col-3 ">Product Image</div>
+        <!-- <div  class="col-1 border ">Product Id</div> -->
+        <div  class="col-2  ">Product Price</div>
+        <div  class="col-2  ">Total</div>
+        <div  class="col-1 ">Action</div>
+      </div>
+      <div style="height:10rem; " class="row text-Dark">
+        <div  class="col-2  ">{{cartItem.name}}</div>
+        <div  class="col-2  ">{{cartItem.qty}}</div>
+        <div class="col-3  "><img [src]="cartItem.imageUrl"/></div>
+        <!-- <div  class="col-1 border ">{{cartItem.id}}</div> -->
+        <div  class="col-2  ">{{ cartItem.price | currency: 'INR'}}</div>
+        <div  class="col-2  ">{{cartItem.qty * cartItem.price | currency: 'INR'}}</div>
+         <div  class="col-1 "> 
+       <a routerLink="/buy"> <button type="button">Buy Now</button></a>
+        </div>
+        
+        </div>
+      
+
+    </div>
+  
+  <!-- </div>  -->
+  
+ 
+

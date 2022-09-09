@@ -1,0 +1,18 @@
+<div class="item">
+<h1>Shop Your Favorite</h1>
+<h4>Impressive Collection For Dream Home</h4>
+
+<div class="row">
+  <div class="col-md-4"  *ngFor="let item of itemList | filter:searchKey:'name'">
+    <app-main1-item [main1Item]="item"></app-main1-item>
+  </div>
+ </div>
+</div>
+<div class="button-box">
+  <button class="button" mat-raised-button color="primary" type="submit" (click)="onadd()">Add Item</button>
+</div>
+
+          <div class="banner">
+            <h1>Wooden Home Temple</h1>
+            <img class="temple" src="assets/images/temple.jpg"/>
+          </div>

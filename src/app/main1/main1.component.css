@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+}
+.item{
+    background-color: whitesmoke;
+}
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    animation: blinker 1s linear infinite;
+}
+.temple{
+    margin-left:15rem;
+    
+}
+.container{
+    background-color: whitesmoke;
+}
+img{
+    transition: transform .2s;
+   border-radius: 20px;
+}
+img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(0.9); 
+  }
+.images:hover{
+   height: 15rem; 
+   width: 26rem;
+}
+h2{
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+}
+h2:hover{
+    color: black;
+}
+
+@media only screen  and (max-width:1800px) {
+    .temple {
+    margin-left: 10px;
+    height: auto;
+    width: 15rem;
+    }
+    .row{
+        margin-left: 0;
+    }
+  
+  }
+  @media only screen  and (max-width: 600px) {
+    .temple {
+    margin-left: 30px;
+    height: auto;
+    width: 30rem;
+    }
+    .button{
+        margin-left:5rem;
+    }
+}
+.button{
+    margin-left: 115rem;
+    margin-top: 2rem;
+}

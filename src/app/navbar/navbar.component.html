@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <i class="bi bi-snow"></i>
+    <a class="navbar-brand"  routerLink="/home">FurniWeb</a>
+    <button  class="navbar-toggler" type="button" (click)="toggleNavbar()" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span  class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" id="link" routerLink="/main1" aria-current="page" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" routerLink="/store" href="#">Store</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" routerLink="/profile" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" routerLink="/cart" href="#"><i class="bi bi-cart-fill"></i>   <span matBadge={{itemCart}} matBadgeOverlap="false"  matBadgeColor="warn"></span></a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" ><i class="bi bi-truck"></i><span class="track">Track your order</span></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input [(ngModel)]="searchTerm" (keyup)="search($event)" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button (click)="srch()"  class="btn " type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>

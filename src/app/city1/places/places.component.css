@@ -1,0 +1,12 @@
+
+
+@media only screen and (max-width: 1800px){
+    .card{
+      display: flex;
+      flex-direction: column; 
+      margin-left: 0;
+    }
+}
+.card{
+    margin-top:2rem; width:30rem; margin-left:6rem;
+}

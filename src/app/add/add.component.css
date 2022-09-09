@@ -1,0 +1,11 @@
+.main{
+height: 25rem;
+width: 40rem;
+}
+input{
+    height: 3rem;
+    width:38rem;
+}
+label{
+    font-size: 1rem;
+}

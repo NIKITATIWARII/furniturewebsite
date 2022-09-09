@@ -1,0 +1,38 @@
+h1{
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+.btn-group{
+    display: flex;
+    margin-left: 50rem;
+}
+.cash{
+    margin-top: 2rem;
+    height: 2.5rem;
+    width: 12rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    background-color: black;
+    color: white;
+}
+.bi-wallet-fill{
+    color: brown;
+    font-size: 1rem;
+    margin-left:8px;
+}
+.cash:hover{
+background-color: rgba(0, 0, 0, 0.692);
+}
+@media only screen and (max-width: 1800px){
+    .btn-group{
+     margin-left:0%;
+    }
+    .cash{
+     margin-left: 0;
+    }
+    h1{
+        font-size: 2rem;
+    }
+        
+    
+}

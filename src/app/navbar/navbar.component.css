@@ -1,0 +1,67 @@
+.navbar{
+    background-color: #252525;
+ color: #fff;
+ height: 5rem;
+ 
+
+}
+.navbar-brand{
+    color: white; font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: #ff8d1e;
+}
+.navbar-toggler{
+    color: white;
+}
+#link{
+    color: white;       
+}
+#link:hover{
+    color: #ff8d1e;
+}
+.nav-link{
+ color: #fff; 
+}
+.navbar-toggler-icon{
+    color: #fff; 
+}
+i{
+    font-size: 1.5rem;
+}
+.bi-truck{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+}
+.track{
+ visibility: hidden;
+ position: absolute;
+
+}
+.bi-truck:hover .track{
+    visibility: visible;
+}
+
+.nav-item:hover{
+color:#ff8d1e ;
+}
+.btn{background-color: #ff8d1e; color:#fff;}
+.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    -ms-transition: all 250ms ease-in-out 0s;
+    -o-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
+    
+    }
+    @media only screen  and (max-width: 1800px){
+        .navbar{
+            height:15rem;
+        }
+    }

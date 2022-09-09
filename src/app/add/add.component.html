@@ -1,0 +1,45 @@
+ <div class="main">
+    <label>Product Name</label>
+    <br>
+<input type="text" placeholder="Name" [(ngModel)]="mytask"/>
+<br>
+<br>
+<label>Product Id</label>
+<br>
+<input type="text" placeholder="Id" [(ngModel)]="idee"/>
+<br>
+<br>
+<label>Product Image Url</label>
+<br>
+<input type="text" placeholder="URL" [(ngModel)]="url" />
+<br>
+<br>
+<br>
+<label>Product Link</label>
+<br>
+<input type="text" placeholder="Link" [(ngModel)]="link" />
+<br>
+</div>
+<form >
+<div cols="2" rowHeight="900px" >
+   <div *ngFor="let item itemList">
+    <app-main1-item [main1Item]="item"></app-main1-item>
+   </div>
+   
+
+    <div class="gr">
+        <div class="controles-container">
+           
+           
+            <div class="add-bottom-padding">
+                <mat-checkbox formControlName="isready">Agree terms and coditions</mat-checkbox>
+            </div>
+            <div class="button-box">
+                <button mat-raised-button color="primary" type="submit" (click)="addItem()">Item Add</button>
+            </div>
+        </div>
+    </div>
+ 
+    
+</div>
+</form>

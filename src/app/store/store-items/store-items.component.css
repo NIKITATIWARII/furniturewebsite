@@ -1,0 +1,25 @@
+
+
+.images{
+height:20rem ;  width:20rem;
+border-radius: 50%;
+}
+.container{
+    /* background-color: whitesmoke; */
+    /* margin-left: 6rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+    text-align:center;
+    margin-right: 2rem;
+}
+h2:hover{
+    color: black;
+}
+a{
+    text-decoration: none;
+}

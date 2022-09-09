@@ -1,0 +1,23 @@
+<div  class="card mb-4 shadow-sm">
+    <img  width="100%"
+    [src] ="productItem.imageUrl"/>
+    <div class="card-body">
+        <div class="card-text1">
+         <div class="content1"><strong>{{productItem.price | currency: 'INR'}}</strong></div>   
+         <div class="content">
+            <button class="count" type="button" (click)="increment(productItem)" class="btn"><i class="bi bi-plus"></i></button>
+            <span>{{productItem.qty}}</span>
+            <button class="count" type="button" (click)="decrement(productItem)" class="btn"><i class="bi bi-dash"></i></button>
+        </div>
+        
+        </div>
+        <p class="card-text">{{productItem.name}}</p>
+        <p class="card-text">{{productItem.description}}</p>
+        <div class = "d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+            <button (click) ="addToCart(productItem)" type="button" class="btn-btn-primary product-btn">Add to Cart</button>
+          
+        </div>
+        </div>
+    </div>
+</div>

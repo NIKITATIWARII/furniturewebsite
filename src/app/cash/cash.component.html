@@ -1,0 +1,46 @@
+<form [formGroup]="form">
+<mat-grid-list cols="2" rowHeight="300px" >
+  
+   <mat-grid-tile><div class="controles-container">
+    <input type="hidden" formControlName="$key">
+       <mat-form-field>
+           <input matInput placeholder="Full Name" formControlName="fullName" >
+           <mat-error>This field is mandatory</mat-error>
+       </mat-form-field>
+       
+       <mat-form-field>
+           <input matInput placeholder="Phone Number" formControlName="phnnumber" [(ngModel)]="phnnumber" min="10" max="15">
+           <mat-error>This field is mandatory</mat-error>
+       </mat-form-field>
+       <mat-form-field>
+        <input matInput placeholder="Pin Code" formControlName="pincode">
+        <mat-error>This field is mandatory</mat-error>
+    </mat-form-field>
+     
+   </div></mat-grid-tile>
+
+   <mat-grid-tile>
+       <div class="controles-container">
+          
+           <mat-form-field>
+               <input matInput placeholder="Address" formControlName="city"> 
+               <mat-error>This field is mandatory</mat-error>
+           </mat-form-field>
+           <mat-form-field>
+               <input matInput placeholder="State" formControlName="state" />
+               <mat-error>This field is mandatory</mat-error>
+           </mat-form-field>
+           <div class="add-bottom-padding">
+               <mat-checkbox formControlName="isready">All the Given Informations  given by me are Right</mat-checkbox>
+           </div>
+           <div class="button-box">
+               <button mat-raised-button color="primary" type="submit"  (click)="orderPlaced()" (keydown)="move()" [disabled]="form.invalid" >Order Place</button>
+           </div>
+           <div id="sign-in-button"></div>
+       </div>
+   </mat-grid-tile>
+
+   
+ </mat-grid-list>
+</form>
+

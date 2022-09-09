@@ -1,0 +1,38 @@
+/* h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+}
+h2{
+    text-align: center;
+    margin-right: 12rem;
+} */
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    animation: blinker 1s linear infinite;
+}
+.temple{
+    margin-left:15rem;
+    
+}
+.container{
+    /* background-color: whitesmoke; */
+    margin-left: 6rem;
+}
+
+h2{
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+    text-align: center;
+    margin-right: 12rem;
+}
+h2:hover{
+    color: black;
+}
+
+@media only screen  and (max-width: 1800px){
+    .container{
+        margin-left: 0;
+    }
+}

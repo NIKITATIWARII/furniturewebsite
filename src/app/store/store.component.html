@@ -1,0 +1,35 @@
+<div class="store">
+    <img class="storeImage" src="assets/images/store2.jpg" />
+    <div class="text">FurniWeb
+    </div>
+    <span>Experience Store</span>
+    <div class="container">
+        <strong>
+            <h1>Our Stores</h1>
+        </strong>
+        <div class="row">
+            <div class="col-md-4"  *ngFor="let item of itemList">
+                <app-store-items [storeItem]="item"></app-store-items>
+              </div>
+             </div>
+
+        </div>
+        <!-- <div class="city">
+            <div class="city1">
+                <img class="cit" src="assets/images/city4.jpg" />
+             <a routerLink="/city4" > <h2 style="text-align: center; font-size: 2rem; margin-top:1rem;">Delhi</h2></a> 
+            </div>
+            <div class="city1">
+                <img class="cit" src="assets/images/city5.jpg" />
+              <a routerLink="/city5">  <h2 style="text-align: center; font-size: 2rem; margin-top:1rem;">Jaipur</h2></a>
+            </div>
+            <div class="city1">
+                <img class="cit" src="assets/images/city6.jpg" />
+            <a routerLink="/city6">   <h2 style="text-align: center; font-size: 2rem; margin-top:1rem;">Pune</h2></a> 
+            </div>
+
+        </div> -->
+    </div>
+
+
+

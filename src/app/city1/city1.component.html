@@ -1,0 +1,12 @@
+<div class="city1">
+    <h1>Furniture Stores in {{cityName}}</h1>
+
+</div>
+<div class="container ">
+    
+    <div class="places" *ngFor="let place of places">
+       
+    
+        <app-places [plac] ="place"></app-places>
+    </div>
+</div>

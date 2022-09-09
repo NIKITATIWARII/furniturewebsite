@@ -1,0 +1,16 @@
+
+<div class="container">
+    <div  class="row ">
+      <div class="col">
+       <img class="images"   [src]="reviewItem.imageUrl"   alt="image1">
+       <h2>{{reviewItem.description}}</h2>
+       <h1 >{{reviewItem.name}}</h1>
+       <br>
+       <ngb-rating class="rating" [max]="5" [(rate)]="reviewItem.rating" [readonly]="false"></ngb-rating>
+        <h2>{{reviewItem.city}}</h2>
+      </div>
+     </div>
+
+      </div>
+
+

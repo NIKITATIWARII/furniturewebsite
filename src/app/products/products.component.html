@@ -1,0 +1,10 @@
+<div class="sofa">
+    <b><h1 >{{proName}}</h1></b> 
+    <img class="img1" src="https://thumbs.dreamstime.com/b/office-furniture-10429733.jpg"/>
+    <img class="img2" src="https://thumbs.dreamstime.com/b/furniture-home-decor-store-designer-30918374.jpg"/>                                         
+</div>
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of productList | filter:searchkey:'name'">
+        <app-product-item [productItem] ="product"></app-product-item>
+    </div>
+</div>
